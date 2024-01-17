@@ -1,5 +1,5 @@
 import { add } from '@dnhyxc/core';
-import getNameInfo from './src/utils';
+import { getNameInfo } from './src/utils';
 
 const sum: number = add(9, 12);
 
