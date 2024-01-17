@@ -18,10 +18,19 @@
     ]
   },
   "lint-staged": {
-    "*.{ts,js}": [
-      "node --max_old_space_size=8192 ./node_modules/.bin/prettier -w",
-      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color",
+    "*.{js,ts,tsx,jsx,vue}": [
+      "eslint --fix",
+      "prettier --write",
       "git add"
+    ],
+    "{!(package)*.json,*.code-snippets,.!(browserslist)*rc}": [
+      "prettier --write--parser json"
+    ],
+    "package.json": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
     ]
   },
   "keywords": [
