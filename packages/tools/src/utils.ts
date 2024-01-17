@@ -1,5 +1,5 @@
 export const getNameInfo = (name: string): string => {
-  return 'my name is' + name;
+  return 'my name is ' + name;
 };
 
 // 计算资源加载的进度

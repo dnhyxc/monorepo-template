@@ -37,8 +37,16 @@ export default defineConfig([
       resolve(),
       commonjs(),
       babel({
-        babelrc: false,
-        presets: [['@babel/preset-env', { modules: false, loose: true }]],
+        presets: [
+          [
+            '@babel/preset-env',
+            {
+              targets: {
+                node: 'current'
+              }
+            }
+          ]
+        ],
         plugins: [['@babel/plugin-proposal-class-properties', { loose: true }]],
         exclude: 'node_modules/**'
       }),
