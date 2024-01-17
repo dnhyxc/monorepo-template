@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "pnpm -r --filter=./packages/* run build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "npx eslint ./packages  --ext ts,tsx,js,jsx"
   },
   "husky": {
     "hooks": {

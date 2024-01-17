@@ -6,7 +6,6 @@
   },
   // "extends": ["standard", "prettier", "plugin:prettier/recommended"],
   "extends": [
-    "prettier",
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
@@ -24,23 +23,11 @@
   "rules": {
     "semi": 0, // 禁止尾部使用分号“ ; ”
     "no-var": "error", // 禁止使用 var
-    "indent": 2, // 缩进2格
+    "indent": ["error", 2], // 缩进2格
     "no-mixed-spaces-and-tabs": "error", // 不能空格与tab混用
     "quotes": [2, "single"], // 使用单引号
-    // "vue/singleline-html-element-content-newline": "off", // 不强制换行
-    "vue/max-attributes-per-line": [
-      "error",
-      {
-        "singleline": { "max": 8 },
-        "multiline": { "max": 8 }
-      }
-    ], // vue template模板元素第一行最多5个属性
-    "vue/multi-word-component-names": 0,
     "no-useless-catch": 0,
     "prettier/prettier": 0,
-    "vue/no-mutating-props": 0,
-    "vue/no-deprecated-v-on-native-modifier": 0,
-    "vue/no-v-html": 0,
     "no-new": 0,
     "no-use-before-define": 0,
     "no-unused-expressions": 0,
