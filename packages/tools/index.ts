@@ -7,6 +7,6 @@ console.log('sum = ', sum);
 
 const info: string = getNameInfo('dnhyxc');
 
-console.log('info is：', info);
+console.log('the info is：', info);
 
 export { getNameInfo };
