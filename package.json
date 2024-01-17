@@ -5,6 +5,7 @@
   "scripts": {
     "build": "pnpm -r --filter=./packages/* run build",
     "prepare": "husky install",
+    "publish": "pnpm --filter=./packages/* run build && pnpm changeset publish",
     "test": "npx eslint ./packages  --ext ts,vue,js --fix"
   },
   "husky": {
@@ -44,15 +45,15 @@
   "devDependencies": {
     "@babel/core": "^7.23.7",
     "@babel/preset-env": "^7.23.8",
+    "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
     "@rollup/plugin-alias": "^5.1.0",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "rollup-plugin-delete": "^2.0.0",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-eslint": "^9.0.5",
     "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
     "eslint": "^8.56.0",
@@ -60,6 +61,7 @@
     "lint-staged": "^15.2.0",
     "prettier": "^3.2.3",
     "rollup": "^4.9.5",
+    "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
