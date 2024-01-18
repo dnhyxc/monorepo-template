@@ -5,7 +5,7 @@
   "scripts": {
     "build": "pnpm -r --filter=./packages/* run build",
     "prepare": "husky install",
-    "publish": "pnpm --filter=./packages/* run build && pnpm changeset publish",
+    "publish": "pnpm --filter=./packages/* run build && pnpm changeset && pnpm changeset version && pnpm changeset publish",
     "test": "npx eslint ./packages  --ext ts,vue,js --fix"
   },
   "husky": {
