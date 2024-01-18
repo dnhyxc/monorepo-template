@@ -1,8 +1,9 @@
 {
   "name": "@dnhyxc/tools",
-  "version": "2.0.0",
+  "version": "2.0.4",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "dev": "rollup -c rollup.config.js -w",
     "build": "vitest run && rollup -c rollup.config.js",
