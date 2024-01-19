@@ -73,7 +73,12 @@ export const buildConfig = ({ packageName }) => {
     // 单独生成声明文件
     {
       input: './index.ts',
-      plugins: [dts()],
+      plugins: [
+        dts(),
+        alias({
+          entries: [{ find: '@', replacement: './src' }]
+        })
+      ],
       output: {
         format: 'esm',
         file: 'dist/index.d.ts'

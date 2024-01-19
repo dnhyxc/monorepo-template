@@ -1,5 +1,11 @@
 # @dnhyxc/tools
 
+## 2.0.10
+
+### Patch Changes
+
+- chore
+
 ## 2.0.9
 
 ### Patch Changes

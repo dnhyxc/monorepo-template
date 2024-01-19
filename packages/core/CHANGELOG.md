@@ -1,5 +1,11 @@
 # @dnhyxc/core
 
+## 2.0.16
+
+### Patch Changes
+
+- chore
+
 ## 2.0.15
 
 ### Patch Changes

@@ -1,3 +1,4 @@
-import { add } from '@/add';
+import { add, createPlugin } from '@/add';
+import { coustomPlugin } from '@/plugins';
 
-export { add };
+export { add, createPlugin, coustomPlugin };

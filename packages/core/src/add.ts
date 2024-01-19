@@ -1,5 +1,11 @@
+import { coustomPlugin } from './plugins';
+
 const add = (a: number, b: number): number => {
   return a + b;
 };
 
-export { add };
+const createPlugin = () => {
+  console.log(coustomPlugin('this is my test code'));
+};
+
+export { add, createPlugin };

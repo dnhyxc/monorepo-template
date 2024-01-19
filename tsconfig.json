@@ -1,5 +1,12 @@
 {
-  "include": ["./packages/core/src/*", "./packages/tools/src/*", "./src/*", "./index.ts"],
+  "include": [
+    "./packages/core/src/*",
+    "./packages/tools/src/*",
+    "./packages/core/index.ts",
+    "./packages/tools/index.ts",
+    "./src/*",
+    "./index.ts"
+  ],
   "compilerOptions": {
     "target": "ES2019",
     "module": "ESNext",
@@ -14,7 +21,7 @@
     "baseUrl": ".", // 引入模块的方式
     // 路径别名配置
     "paths": {
-      "@/*": ["packages/core/src/*", "packages/tools/src/*"]
+      "@/*": ["./packages/core/src/*", "./packages/tools/src/*"]
     }
   }
 }
