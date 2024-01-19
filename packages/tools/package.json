@@ -1,8 +1,10 @@
 {
   "name": "@dnhyxc/tools",
-  "version": "2.0.4",
+  "version": "2.0.6",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "dev": "rollup -c rollup.config.js -w",

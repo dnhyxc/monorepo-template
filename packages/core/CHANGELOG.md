@@ -1,5 +1,47 @@
 # @dnhyxc/core
 
+## 2.0.12
+
+### Patch Changes
+
+- fix: build
+
+## 2.0.11
+
+### Patch Changes
+
+- fix: build
+
+## 2.0.10
+
+### Patch Changes
+
+- fix: package
+
+## 2.0.9
+
+### Patch Changes
+
+- fix: package
+
+## 2.0.8
+
+### Patch Changes
+
+- package
+
+## 2.0.7
+
+### Patch Changes
+
+- package
+
+## 2.0.6
+
+### Patch Changes
+
+- fix: build
+
 ## 2.0.5
 
 ### Patch Changes

@@ -16,16 +16,12 @@ export default defineConfig([
       })
     ],
     output: [
-      { file: 'dist/index.js', format: 'cjs' },
       { file: 'dist/index.esm.js', format: 'es' },
-      {
-        format: 'module',
-        file: 'dist/index.esm.js'
-      },
+      { file: 'dist/index.cjs', format: 'cjs' },
       {
         format: 'umd',
-        file: 'dist/index.min.js',
-        name: 'PackageName'
+        file: 'dist/index.js',
+        name: 'dnhyxcTools'
       }
     ]
   },

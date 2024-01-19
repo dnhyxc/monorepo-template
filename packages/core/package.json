@@ -1,7 +1,9 @@
 {
   "name": "@dnhyxc/core",
-  "version": "2.0.5",
-  "main": "dist/index.js",
+  "version": "2.0.12",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "dev": "rollup -c rollup.config.js -w",
