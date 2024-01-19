@@ -7,7 +7,9 @@
     "prepare": "husky install",
     "release": "pnpm changeset publish",
     "publish": "pnpm --filter=./packages/* run build && pnpm changeset && pnpm changeset version && pnpm changeset publish",
-    "test": "npx eslint ./packages  --ext ts,vue,js --fix"
+    "test": "npx eslint ./packages  --ext ts,vue,js --fix",
+    "cmt": "git-cz",
+    "commit": "git-cz"
   },
   "husky": {
     "hooks": {
@@ -57,6 +59,8 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
+    "commitizen": "^4.3.0",
+    "cz-customizable": "^7.0.0",
     "eslint": "^8.56.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",

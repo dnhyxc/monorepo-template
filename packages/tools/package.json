@@ -1,6 +1,6 @@
 {
   "name": "@dnhyxc/tools",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "",
   "main": "dist/index.cjs",
   "module": "dist/index.esm.js",
@@ -11,12 +11,17 @@
     "build": "vitest run && rollup -c rollup.config.js",
     "test": "vitest run"
   },
-  "keywords": [],
+  "keywords": [
+    "pnpm",
+    "monorepo",
+    "tools"
+  ],
   "author": "",
   "license": "ISC",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "devDependencies": {
     "vitest": "^1.2.0"

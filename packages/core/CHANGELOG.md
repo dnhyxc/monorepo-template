@@ -1,5 +1,11 @@
 # @dnhyxc/core
 
+## 2.0.13
+
+### Patch Changes
+
+- add readme
+
 ## 2.0.12
 
 ### Patch Changes

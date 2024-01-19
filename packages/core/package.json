@@ -1,6 +1,6 @@
 {
   "name": "@dnhyxc/core",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "main": "dist/index.cjs",
   "module": "dist/index.esm.js",
   "browser": "dist/index.js",
@@ -10,12 +10,17 @@
     "build": "vitest run && rollup -c rollup.config.js",
     "test": "vitest run"
   },
-  "keywords": [],
+  "keywords": [
+    "pnpm",
+    "monorepo",
+    "core"
+  ],
   "author": "",
   "license": "ISC",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "devDependencies": {
     "vitest": "^1.2.0"
