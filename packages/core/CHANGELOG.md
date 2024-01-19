@@ -1,5 +1,17 @@
 # @dnhyxc/core
 
+## 2.0.15
+
+### Patch Changes
+
+- patch
+
+## 2.0.14
+
+### Patch Changes
+
+- test
+
 ## 2.0.13
 
 ### Patch Changes
