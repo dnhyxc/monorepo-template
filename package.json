@@ -11,16 +11,10 @@
     "cmt": "git-cz",
     "commit": "git-cz"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
     }
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
   },
   "lint-staged": {
     "*.{js,ts,tsx,jsx,vue}": [
@@ -42,7 +36,6 @@
     "pnpm",
     "monorepo"
   ],
-  "type": "module",
   "author": "@dnhyxc",
   "license": "ISC",
   "devDependencies": {

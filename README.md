@@ -13,3 +13,5 @@ packages:
   - 'packages/**'
 ```
 
+### 配置 commitlint 
+
