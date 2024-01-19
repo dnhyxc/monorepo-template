@@ -13,6 +13,14 @@ packages:
   - 'packages/**'
 ```
 
+### 配置 rollup 打包
+
+在根目录下安装如下插件：
+
+```yaml
+rollup
+```
+
 ### 配置 typescript
 
 在根目录下安装 `typescript`：

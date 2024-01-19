@@ -1,10 +1,6 @@
-import path from 'path';
 import { defineConfig } from 'vitest/config';
+import { vitestConfig } from '../../scripts/vitest-config.mjs';
 
-export default defineConfig({
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src')
-    }
-  }
-});
+const config = vitestConfig({ folder: 'core' });
+
+export default defineConfig(config);

@@ -1,0 +1,20 @@
+{
+  "include": ["./packages/core/src/*", "./packages/tools/src/*", "./src/*", "./index.ts"],
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "useUnknownInCatchVariables": false,
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "baseUrl": ".", // 引入模块的方式
+    // 路径别名配置
+    "paths": {
+      "@/*": ["packages/core/src/*", "packages/tools/src/*"]
+    }
+  }
+}
