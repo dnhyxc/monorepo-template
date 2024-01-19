@@ -21,7 +21,7 @@ packages:
 pnpm i typescript -Dw
 ```
 
-在子项目（core 及 tools）下新建 `tsconfig.json` 文件，内容如下：
+在**子项目**（core 及 tools）下新建 `tsconfig.json` 文件，内容如下：
 
 ```json
 {
@@ -36,9 +36,13 @@ pnpm i typescript -Dw
     "noUnusedLocals": true,
     "resolveJsonModule": true,
     "useUnknownInCatchVariables": false,
-    "typeRoots": ["./types", "./node_modules/@types"]
-  },
-  "types": ["jest"]
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "baseUrl": ".", // 引入模块的方式
+    // 路径别名配置
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
 }
 ```
 
