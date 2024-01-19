@@ -1,4 +1,4 @@
-import { getNameInfo } from './src/utils';
+import { getNameInfo } from '@/utils';
 
 const info: string = getNameInfo('dnhyxc');
 

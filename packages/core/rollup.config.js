@@ -57,9 +57,7 @@ export default defineConfig([
         exclude: ['node_modules/**', 'dist/**']
       }),
       alias({
-        entries: {
-          '@': getPath('src')
-        }
+        entries: [{ find: '@', replacement: 'src' }]
       })
     ],
     output: [

@@ -1,3 +1,3 @@
-import { add } from './src/add';
+import { add } from '@/add';
 
 export { add };

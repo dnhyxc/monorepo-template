@@ -10,7 +10,12 @@
     "noUnusedLocals": true,
     "resolveJsonModule": true,
     "useUnknownInCatchVariables": false,
-    "typeRoots": ["./types", "./node_modules/@types"]
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "baseUrl": ".", // 引入模块的方式
+    // 路径别名配置
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "types": ["jest"]
 }
