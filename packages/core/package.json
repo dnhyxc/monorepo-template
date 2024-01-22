@@ -7,7 +7,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "dev": "rollup -c rollup.config.js -w",
-    "build": "vitest run && rollup -c rollup.config.js",
+    "build": "rimraf dist && vitest run && rollup -c rollup.config.js",
     "test": "vitest run"
   },
   "keywords": [
