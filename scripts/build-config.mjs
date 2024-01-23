@@ -44,25 +44,32 @@ export const buildConfig = ({ packageName }) => {
               }
             ]
           ],
-          plugins: [['@babel/plugin-proposal-class-properties', { loose: true }]],
+          // 用于支持在类中使用类属性的新语法，当loose设置为true，代码被以赋值表达式的形式编译，否则，代码以Object.defineProperty来编译。
+          plugins: [['@babel/plugin-proposal-class-properties']],
+          // plugins: [['@babel/plugin-proposal-class-properties', { loose: true }]],
           exclude: 'node_modules/**'
         }),
-        eslint({
-          throwOnError: true,
-          throwOnWarning: true,
-          include: ['packages/**'],
-          exclude: ['node_modules/**', 'dist/**']
-        }),
+        // 配置路径别名
         alias({
           entries: [
             { find: '@', replacement: '../packages/core/src' },
             { find: '@', replacement: '../packages/tools/src' }
           ]
+        }),
+        // 配置eslint
+        eslint({
+          throwOnError: true,
+          throwOnWarning: true,
+          include: ['packages/**'],
+          exclude: ['node_modules/**', 'dist/**']
         })
       ],
       output: [
+        // 输出支持 es6 语法的包
         { file: 'dist/index.esm.js', format: 'es' },
+        // 输出支持 commonjs 的包
         { file: 'dist/index.cjs', format: 'cjs' },
+        // 输出支持 umd 格式的包，以便通过 script 标签直接引用
         {
           format: 'umd',
           file: 'dist/index.js',

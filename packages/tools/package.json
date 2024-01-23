@@ -1,7 +1,7 @@
 {
   "name": "@dnhyxc/tools",
   "version": "2.0.10",
-  "description": "",
+  "description": "dnhyxc 工具包",
   "main": "dist/index.cjs",
   "module": "dist/index.esm.js",
   "browser": "dist/index.js",
@@ -14,9 +14,12 @@
   "keywords": [
     "pnpm",
     "monorepo",
-    "tools"
+    "utils"
   ],
-  "author": "",
+  "author": {
+    "name": "dnhyxc",
+    "github": "https://github.com/dnhyxc"
+  },
   "license": "ISC",
   "type": "module",
   "files": [
