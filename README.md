@@ -33,7 +33,7 @@ packages:
 }
 ```
 
-在 packages 文件夹下新建 `core` 和 `tools` 文件夹，文件名称可自己意愿更改，不一定要按 `core` 或者 `tools` 命名。
+在 packages 文件夹下新建 `core` 和 `tools` 文件夹，文件名称可根据自己意愿更改，不一定要按 `core` 或者 `tools` 命名。
 
 文件夹新建完毕后，分别在 `core` 和 `tools` 文件夹下新建 `package.json` 文件，也可以通过 `pnpm init` 创建。但是文件内容需要设置成如下：
 
@@ -192,7 +192,7 @@ pnpm i typescript rollup-plugin-typescript2 rollup-plugin-dts -Dw
 
 - rollup-plugin-dts：用于生成 typescript 的声明文件。
 
-与上述 rollup 配置一样，为了不在每个子项目中都配置一份同样的 `tsconfig.json` 文件，需要在项目根目录下的 `scripts` 文件夹中新建 `tsconfig.json` 文件，具体内容如下：
+与上述 rollup 配置一样，为了不在每个子项目中都配置一份同样的 `tsconfig.json` 文件，需要在项目根目录下中新建 `tsconfig.json` 文件，具体内容如下：
 
 ```json
 {
