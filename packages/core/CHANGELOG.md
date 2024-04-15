@@ -1,5 +1,17 @@
 # @dnhyxc/core
 
+## 3.0.2
+
+### Patch Changes
+
+- 优化vite插件
+
+## 3.0.1
+
+### Patch Changes
+
+- 更改插件名称
+
 ## 3.0.0
 
 ### Major Changes
