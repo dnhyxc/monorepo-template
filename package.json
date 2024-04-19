@@ -68,6 +68,7 @@
     "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "unplugin-element-plus": "^0.8.0"
   }
 }
