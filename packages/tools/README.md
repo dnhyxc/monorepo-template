@@ -3,7 +3,7 @@
 ```js
 import { getNameInfo } from '@dnhyxc/tools';
 
-console.log(getNameInfo('dnhyxc'));
+console.log(getNameInfo('dnhyxc')); 
 ```
 
 ### CommonJS 使用
