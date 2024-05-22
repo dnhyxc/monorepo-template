@@ -1,5 +1,3 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
 import typescript from 'rollup-plugin-typescript2';
 import babel from '@rollup/plugin-babel';
 // 解析cjs格式的包
@@ -14,11 +12,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import eslint from '@rollup/plugin-eslint';
 // 配置别名
 import alias from '@rollup/plugin-alias';
-
-// 通过改写__dirname 为__dirnameNew，解决打包报错
-const __filenameNew = fileURLToPath(import.meta.url);
-const __dirnameNew = path.dirname(__filenameNew);
-const getPath = (_path) => path.resolve(__dirnameNew, _path);
+import { getPath } from '../utils/index.mjs';
 
 export const buildConfig = ({ packageName }) => {
   return [
