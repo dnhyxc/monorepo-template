@@ -45,7 +45,7 @@ const copyFileSync = ({ templatePath, projectPath, projectName }) => {
 
   if (path.basename(templatePath) === 'package.json') {
     const pkg = JSON.parse(fs.readFileSync(templatePath, 'utf-8'));
-    pkg.name = `dnhyxc-${projectName}`;
+    pkg.name = `${projectName}`;
     fs.writeFileSync(projectPath, JSON.stringify(pkg, null, 2) + '\n');
     return;
   }
@@ -84,7 +84,7 @@ const updateBuildConfig = (buildConfigPath, projectName) => {
 const updateRollupConfig = (projectName) => {
   const rollupConfigPath = getPath(`../packages/${projectName}/rollup.config.js`);
   const config = fs.readFileSync(rollupConfigPath, 'utf-8');
-  const modifiedConfig = config.replace('dnhyxc-demo', `dnhyxc-${projectName}`);
+  const modifiedConfig = config.replace('dnhyxc-demo', `${projectName}`);
   fs.writeFileSync(rollupConfigPath, modifiedConfig);
 }
 
@@ -144,6 +144,7 @@ const create = async ({ templatePath, packagesPath, projectName }) => {
   updateRollupConfig(projectName)
   updateVitestConfig(projectName)
   console.log(`创建 ${projectName} 项目成功，运行 pnpm i 安装依赖！\n`);
+  console.log('根据自己需求修改子包的 package.json 信息! \n');
 }
 
 create({ templatePath, packagesPath, projectName: args[0] })

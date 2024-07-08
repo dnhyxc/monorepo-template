@@ -36,6 +36,14 @@ pnpm i visite --filter demo
 npm run create demo
 ```
 
+子包创建完毕之后，运行 `pnpm i` 安装依赖，注意 node 是否支持 pnpm。
+
+```yaml
+pnpm i
+```
+
+上述操作完成后，可以根据自己的需求，更新 `package.json` 中的报名 `name`、`files` 等信息。
+
 ### 运行测试
 
 进入子包，运行 `npm test` 即可运行测试。

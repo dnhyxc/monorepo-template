@@ -99,6 +99,18 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0(@types/node@20.12.7)
 
+  packages/dnhyxc-test:
+    devDependencies:
+      vitest:
+        specifier: ^1.2.0
+        version: 1.2.0(@types/node@20.12.7)
+
+  packages/test:
+    devDependencies:
+      vitest:
+        specifier: ^1.2.0
+        version: 1.2.0(@types/node@20.12.7)
+
   packages/tools:
     devDependencies:
       vitest:
@@ -2543,7 +2555,7 @@ packages:
     dev: true
 
   /@vitest/expect@1.2.0:
-    resolution: {integrity: sha512-H+2bHzhyvgp32o7Pgj2h9RTHN0pgYaoi26Oo3mE+dCi1PAqV31kIIVfTbqMO3Bvshd5mIrJLc73EwSRrbol9Lw==}
+    resolution: {integrity: sha512-H+2bHzhyvgp32o7Pgj2h9RTHN0pgYaoi26Oo3mE+dCi1PAqV31kIIVfTbqMO3Bvshd5mIrJLc73EwSRrbol9Lw==, tarball: https://registry.npmmirror.com/@vitest/expect/-/expect-1.2.0.tgz}
     dependencies:
       '@vitest/spy': 1.2.0
       '@vitest/utils': 1.2.0
@@ -2551,7 +2563,7 @@ packages:
     dev: true
 
   /@vitest/runner@1.2.0:
-    resolution: {integrity: sha512-vaJkDoQaNUTroT70OhM0NPznP7H3WyRwt4LvGwCVYs/llLaqhoSLnlIhUClZpbF5RgAee29KRcNz0FEhYcgxqA==}
+    resolution: {integrity: sha512-vaJkDoQaNUTroT70OhM0NPznP7H3WyRwt4LvGwCVYs/llLaqhoSLnlIhUClZpbF5RgAee29KRcNz0FEhYcgxqA==, tarball: https://registry.npmmirror.com/@vitest/runner/-/runner-1.2.0.tgz}
     dependencies:
       '@vitest/utils': 1.2.0
       p-limit: 5.0.0
@@ -2559,7 +2571,7 @@ packages:
     dev: true
 
   /@vitest/snapshot@1.2.0:
-    resolution: {integrity: sha512-P33EE7TrVgB3HDLllrjK/GG6WSnmUtWohbwcQqmm7TAk9AVHpdgf7M3F3qRHKm6vhr7x3eGIln7VH052Smo6Kw==}
+    resolution: {integrity: sha512-P33EE7TrVgB3HDLllrjK/GG6WSnmUtWohbwcQqmm7TAk9AVHpdgf7M3F3qRHKm6vhr7x3eGIln7VH052Smo6Kw==, tarball: https://registry.npmmirror.com/@vitest/snapshot/-/snapshot-1.2.0.tgz}
     dependencies:
       magic-string: 0.30.5
       pathe: 1.1.2
@@ -2567,13 +2579,13 @@ packages:
     dev: true
 
   /@vitest/spy@1.2.0:
-    resolution: {integrity: sha512-MNxSAfxUaCeowqyyGwC293yZgk7cECZU9wGb8N1pYQ0yOn/SIr8t0l9XnGRdQZvNV/ZHBYu6GO/W3tj5K3VN1Q==}
+    resolution: {integrity: sha512-MNxSAfxUaCeowqyyGwC293yZgk7cECZU9wGb8N1pYQ0yOn/SIr8t0l9XnGRdQZvNV/ZHBYu6GO/W3tj5K3VN1Q==, tarball: https://registry.npmmirror.com/@vitest/spy/-/spy-1.2.0.tgz}
     dependencies:
       tinyspy: 2.2.0
     dev: true
 
   /@vitest/utils@1.2.0:
-    resolution: {integrity: sha512-FyD5bpugsXlwVpTcGLDf3wSPYy8g541fQt14qtzo8mJ4LdEpDKZ9mQy2+qdJm2TZRpjY5JLXihXCgIxiRJgi5g==}
+    resolution: {integrity: sha512-FyD5bpugsXlwVpTcGLDf3wSPYy8g541fQt14qtzo8mJ4LdEpDKZ9mQy2+qdJm2TZRpjY5JLXihXCgIxiRJgi5g==, tarball: https://registry.npmmirror.com/@vitest/utils/-/utils-1.2.0.tgz}
     dependencies:
       diff-sequences: 29.6.3
       estree-walker: 3.0.3
@@ -2598,7 +2610,7 @@ packages:
     dev: true
 
   /acorn-walk@8.3.2:
-    resolution: {integrity: sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==}
+    resolution: {integrity: sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==, tarball: https://registry.npmmirror.com/acorn-walk/-/acorn-walk-8.3.2.tgz}
     engines: {node: '>=0.4.0'}
     dev: true
 
@@ -3664,7 +3676,7 @@ packages:
     dev: true
 
   /execa@8.0.1:
-    resolution: {integrity: sha512-VyhnebXciFV2DESc+p6B+y0LjSm0krU4OgJN44qFAhBY0TJ+1V61tYD2+wHusZ6F9n5K+vl8k0sTy7PEfV4qpg==}
+    resolution: {integrity: sha512-VyhnebXciFV2DESc+p6B+y0LjSm0krU4OgJN44qFAhBY0TJ+1V61tYD2+wHusZ6F9n5K+vl8k0sTy7PEfV4qpg==, tarball: https://registry.npmmirror.com/execa/-/execa-8.0.1.tgz}
     engines: {node: '>=16.17'}
     dependencies:
       cross-spawn: 7.0.3
@@ -4679,7 +4691,7 @@ packages:
     dev: true
 
   /local-pkg@0.5.0:
-    resolution: {integrity: sha512-ok6z3qlYyCDS4ZEU27HaU6x/xZa9Whf8jD4ptH5UZTQYZVYeb9bnZ3ojVhiJNLiXK1Hfc0GNbLXcmZ5plLDDBg==}
+    resolution: {integrity: sha512-ok6z3qlYyCDS4ZEU27HaU6x/xZa9Whf8jD4ptH5UZTQYZVYeb9bnZ3ojVhiJNLiXK1Hfc0GNbLXcmZ5plLDDBg==, tarball: https://registry.npmmirror.com/local-pkg/-/local-pkg-0.5.0.tgz}
     engines: {node: '>=14'}
     dependencies:
       mlly: 1.5.0
@@ -5237,7 +5249,7 @@ packages:
     dev: true
 
   /pathe@1.1.2:
-    resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
+    resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==, tarball: https://registry.npmmirror.com/pathe/-/pathe-1.1.2.tgz}
     dev: true
 
   /pathval@1.1.1:
@@ -5245,7 +5257,7 @@ packages:
     dev: true
 
   /picocolors@1.0.0:
-    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==, tarball: https://registry.npmmirror.com/picocolors/-/picocolors-1.0.0.tgz}
     dev: true
 
   /picomatch@2.3.1:
@@ -5896,7 +5908,7 @@ packages:
     dev: true
 
   /std-env@3.7.0:
-    resolution: {integrity: sha512-JPbdCEQLj1w5GilpiHAx3qJvFndqybBysA3qUOnznweH4QbNYUsW/ea8QzSrnh0vNsezMMw5bcVool8lM0gwzg==}
+    resolution: {integrity: sha512-JPbdCEQLj1w5GilpiHAx3qJvFndqybBysA3qUOnznweH4QbNYUsW/ea8QzSrnh0vNsezMMw5bcVool8lM0gwzg==, tarball: https://registry.npmmirror.com/std-env/-/std-env-3.7.0.tgz}
     dev: true
 
   /stream-transform@2.1.3:
@@ -6372,7 +6384,7 @@ packages:
     dev: true
 
   /vite-node@1.2.0(@types/node@20.12.7):
-    resolution: {integrity: sha512-ETnQTHeAbbOxl7/pyBck9oAPZZZo+kYnFt1uQDD+hPReOc+wCjXw4r4jHriBRuVDB5isHmPXxrfc1yJnfBERqg==}
+    resolution: {integrity: sha512-ETnQTHeAbbOxl7/pyBck9oAPZZZo+kYnFt1uQDD+hPReOc+wCjXw4r4jHriBRuVDB5isHmPXxrfc1yJnfBERqg==, tarball: https://registry.npmmirror.com/vite-node/-/vite-node-1.2.0.tgz}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     dependencies:
@@ -6549,7 +6561,7 @@ packages:
     dev: true
 
   /why-is-node-running@2.2.2:
-    resolution: {integrity: sha512-6tSwToZxTOcotxHeA+qGCq1mVzKR3CwcJGmVcY+QE8SHy6TnpFnh8PAvPNHYr7EcuVeG0QSMxtYCuO1ta/G/oA==}
+    resolution: {integrity: sha512-6tSwToZxTOcotxHeA+qGCq1mVzKR3CwcJGmVcY+QE8SHy6TnpFnh8PAvPNHYr7EcuVeG0QSMxtYCuO1ta/G/oA==, tarball: https://registry.npmmirror.com/why-is-node-running/-/why-is-node-running-2.2.2.tgz}
     engines: {node: '>=8'}
     hasBin: true
     dependencies:
