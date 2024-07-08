@@ -18,22 +18,21 @@ export const buildConfig = ({ packageName }) => {
   // 将包名转化为驼峰式命名，以便通过window.packageName访问
   packageName = packageName.replace(/-(\w)/g, (_, char) => char.toUpperCase());
 
-  const output = [
-    // 输出支持 es6 语法的包
-    { file: 'dist/index.esm.js', format: 'es' },
-    // 输出支持 commonjs 的包
-    { file: 'dist/index.cjs', format: 'cjs' },
-    // 输出支持 umd 格式的包，以便通过 script 标签直接引用
-    {
-      format: 'umd',
-      file: 'dist/index.js',
-      name: packageName
-    }
-  ];
-
   const baseConfig = [
     {
       input: './index.ts',
+      output: [
+        // 输出支持 es6 语法的包
+        { file: 'dist/index.esm.js', format: 'es' },
+        // 输出支持 commonjs 的包
+        { file: 'dist/index.cjs', format: 'cjs' },
+        // 输出支持 umd 格式的包，以便通过 script 标签直接引用
+        {
+          format: 'umd',
+          file: 'dist/index.js',
+          name: packageName
+        }
+      ],
       plugins: [
         typescript({
           tsconfig: getPath('../tsconfig.json'), // 导入本地ts配置
@@ -57,7 +56,7 @@ export const buildConfig = ({ packageName }) => {
             ]
           ],
           // 用于支持在类中使用类属性的新语法，当loose设置为true，代码被以赋值表达式的形式编译，否则，代码以Object.defineProperty来编译。
-          plugins: ['@babel/plugin-proposal-class-properties', '@babel/plugin-transform-private-methods'],
+          plugins: ['@babel/plugin-proposal-class-properties'],
           exclude: 'node_modules/**'
         }),
         // 配置路径别名
@@ -75,7 +74,6 @@ export const buildConfig = ({ packageName }) => {
           exclude: ['node_modules/**', 'dist/**']
         }),
       ],
-      output,
     }
   ]
 
